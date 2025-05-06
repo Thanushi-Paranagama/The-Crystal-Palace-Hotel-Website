@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="SubmitReview.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <img src="Images/logo crystal.png" class="logoIMG" alt="Logo of Crystal Palace">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="blogs.html">Blog</a>
+            <a href="Review.html">Reviews</a>
+            <button class="NavBtn" onclick="window.location.href='login.html';">Login</button>
+            <button class="NavBtn" onclick="window.location.href='register.html';" id="RegisterBtn">Register</button>
+        </nav>
+    </header>
+
+    <header class="modern-header-carousel">
+        <div class="header-content">
+            <h1>We Value Your Feedback!</h1>
+            <p>At The Crystal Palace, your comfort and satisfaction are our top priorities. We’re always striving to make every stay with us unforgettable, and your feedback helps us grow and improve</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="review-form">
+            <h2>Submit Your Review</h2>
+            <form id="review-form" action="Review.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="review">Review</label>
+                    <textarea id="review" name="review" placeholder="Write your review here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Review</button>
+            </form>
+        </section>
+
+        <section class="reviews-section">
+            <form action="prereveiw.php" method="post">
+                <button type="submit" class="submit-button">Previous Reviews</button>
+            </form>
+                
+                
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div>
+                    <img src="Images/logo crystal.png" class="logoIMG" id="FooterLogo" alt="Logo of Crystal Palace">
+                </div>
+                <p>Best place for visit in your summer</p>
+                <div class="social-icons" style="text-align: left;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-mail">
+                <h3>Mail Here</h3>
+                <p>Contact me now.</p>
+                <form class="mail-form">
+                    <input type="email" placeholder="Your mail here" required>
+                    <button type="submit"><i class="fas fa-envelope"></i></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

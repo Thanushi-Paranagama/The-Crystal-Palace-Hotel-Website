@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div ><img src="Images/logo crystal.png" class="logoIMG">
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="blogs.html">Blog</a>
+          <a href="Review.html">Reviews</a>
+          <button class="NavBtn" onclick="window.location.href='login.html';">Login</button>
+    
+          <button class="NavBtn" onclick="window.location.href='register.html';" id="RegisterBtn">Register</button>
+        </nav>
+      </header>
+          <section class="contact-me">
+                    <div class="container">
+                              <h1>Contact Us Today</h1>
+                              <p>
+                                Have questions or need assistance? At The Crystal Palace, we’re here to help! Contact us via phone, email, or the form below, and our team will ensure your experience is seamless and memorable. We look forward to hearing from you!
+                              </p>
+                              <div class="contact-info">
+                                  <p>Email: <a href="mailto:crystalpalace@gmail.com">crystalpalace@gmail.com</a></p>
+                                  <p>Phone: 070 5716510 / 072 2716510</p>
+                              </div>
+                              <div class="form-container">
+                                  <form action="contact.php" method="POST">
+                                      <div class="form-group">
+                                          <label for="name">Name *</label>
+                                          <input type="text" name="name" id="name" placeholder="First">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="last-name">Last Name *</label>
+                                          <input type="text" name="lastname" id="lastname" placeholder="Last">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="contact">Contact Number *</label>
+                                          <input type="text" name="contact" id="contact" placeholder="Enter your contact number">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="message">Comment or Message *</label>
+                                          <textarea id="message" name="comment" placeholder="Write your message here"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <button type="submit">Submit</button>
+                                      </div>
+                                  </form>
+                                  <div class="illustration">
+                                      <img src="Images/contact.png" alt="Contact Illustration">
+                                  </div>
+                              </div>
+                          </div>
+
+          </section>
+          <footer class="footer">
+            <div class="footer-container">
+              <!-- About Section -->
+              <div class="footer-about">
+                  <div ><img src="Images/logo crystal.png" class="logoIMG" id="FooterLogo">
+                  </div>
+                
+                <p>Best place for visite in your summer</p>
+                <div class="social-icons" style="text-align: left;">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+        
+              <!-- Useful Links Section -->
+              <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="blogs.html">Blog</a></li>
+                 
+                </ul>
+              </div>
+        
+              <!-- Mail Section -->
+              <div class="footer-mail">
+                <h3>Mail Here</h3>
+                <p>Contact me now.</p>
+                <form class="mail-form">
+                  <input type="email" placeholder="Your mail here" required>
+                  <button type="submit"><i class="fas fa-envelope"></i></button>
+                </form>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>
